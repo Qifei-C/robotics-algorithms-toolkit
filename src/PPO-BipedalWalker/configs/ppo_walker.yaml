@@ -1,0 +1,46 @@
+# walker_ppo/configs/ppo_walker.yaml
+env_seed: 42
+task_name: "walk"
+
+actor_hdim: 256
+critic_hdim: 256
+log_std_init: -0.5
+
+total_timesteps: 1000000 
+max_episode_len: 1000
+eval_interval_steps: 5000 # 调整评估频率
+log_interval_updates: 10    
+save_interval_updates: 100 
+
+# PPO Agent Hyperparameters
+ppo_agent:
+  lr_actor: 0.0003
+  lr_critic: 0.001
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_epsilon: 0.2
+  ppo_epochs: 10
+  mini_batch_size: 64
+  value_loss_coef: 0.5
+  entropy_coef: 0.01 
+  max_grad_norm: 0.5
+  rollout_steps: 2048
+
+# Custom Reward Wrapper Configuration
+reward_wrapper:
+  use_custom_wrapper: True 
+  upright_torso_weight: 2.5
+  upright_threshold: 0.95
+  min_alive_height_threshold: 0.9 
+  fall_penalty_value: -3.0 
+  target_walk_height: 1.25 
+  crouch_penalty_weight: 2.0 
+  forward_speed_weight: -1.0 
+  target_forward_speed: 0.0 
+  # max_rewarded_speed: 1.0 # for 'walk'.
+  upright_speed_gate_threshold: 0.5 
+  min_height_for_speed_reward: 0.8 
+  control_cost_weight: 0.0001 
+  use_tolerance_for_upright: True
+  use_tolerance_for_speed: True
+  speed_stillness_margin: 0.05
