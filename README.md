@@ -5,9 +5,9 @@
 [![OpenAI Gym](https://img.shields.io/badge/OpenAI%20Gym-0.21+-green.svg)](https://gym.openai.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Comprehensive collection of fundamental robotics algorithms including SLAM, localization, control, and reinforcement learning. Features implementations of particle filters, Kalman filters, PPO, and probabilistic robotics methods with simulation environments.
+Comprehensive collection of fundamental robotics algorithms including SLAM, localization, control, and reinforcement learning. Features implementations of particle filters, Kalman filters, PPO, and probabilistic robotics methods with simulation environments. This repository contains organized implementations of coursework from ESE 6500 at the University of Pennsylvania.
 
-## 🎯 Features
+## Features
 
 - **SLAM Algorithms**: Particle Filter SLAM with mapping
 - **Localization**: Histogram filters and probabilistic methods
@@ -16,7 +16,7 @@ Comprehensive collection of fundamental robotics algorithms including SLAM, loca
 - **Probabilistic Models**: HMM and Baum-Welch algorithm
 - **Sensor Fusion**: IMU attitude estimation
 
-## 🚀 Quick Start
+## Quick Start
 
 ```python
 from src.particle_filter_slam import ParticleFilterSLAM
@@ -33,7 +33,7 @@ agent.train(total_timesteps=1000000)
 agent.save_model('models/bipedal_walker_ppo.zip')
 ```
 
-## 🤖 Algorithm Collection
+## Algorithm Collection
 
 ### 1. Particle Filter SLAM
 - **Location**: `src/ParticleFilter-SLAM/`
@@ -60,7 +60,7 @@ agent.save_model('models/bipedal_walker_ppo.zip')
 - **Features**: Quaternion-based orientation tracking
 - **Applications**: Drones, spacecraft, mobile robots
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 robotics-algorithms-toolkit/
@@ -77,7 +77,7 @@ robotics-algorithms-toolkit/
 └── README.md                     # This file
 ```
 
-## 🔧 Algorithm Details
+## Algorithm Details
 
 ### Particle Filter SLAM
 ```python
@@ -123,11 +123,11 @@ hfilter = HistogramFilter(
 belief = hfilter.localize(sensor_measurements, motion_commands)
 ```
 
-## 📊 Performance Benchmarks
+## Performance Benchmarks
 
 Performance metrics will vary based on your specific environment, hardware configuration, and algorithm parameters. Each algorithm is designed to achieve competitive results when properly configured for your robotics application.
 
-## 🎮 Simulation Environments
+## Simulation Environments
 
 ### Custom Environments
 - 2D grid world for localization
@@ -139,14 +139,14 @@ Performance metrics will vary based on your specific environment, hardware confi
 - Custom robotics environments
 - Sensor noise simulation
 
-## 🔬 Research Applications
+## Research Applications
 
 - **Academic Research**: Probabilistic robotics education
 - **Industry**: Autonomous navigation systems
 - **Competitions**: Robotics challenges and benchmarks
 - **Prototyping**: Algorithm validation before hardware deployment
 
-## 🛠 Installation & Setup
+## Installation & Setup
 
 ```bash
 # Clone repository
@@ -163,19 +163,6 @@ pip install stable-baselines3[extra]
 python examples/slam_demo.py
 ```
 
-## 📈 Educational Value
-
-Perfect for:
-- Robotics engineering courses
-- Research in probabilistic robotics
-- Algorithm comparison studies
-- Rapid prototyping of robot systems
-
-## 🤝 Contributing
-
-We welcome contributions of new algorithms, improvements, and bug fixes!
-
-## 📄 License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
