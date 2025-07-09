@@ -5,7 +5,7 @@
 [![OpenAI Gym](https://img.shields.io/badge/OpenAI%20Gym-0.21+-green.svg)](https://gym.openai.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Comprehensive collection of fundamental robotics algorithms including SLAM, localization, control, and reinforcement learning. Features implementations of particle filters, Kalman filters, PPO, and probabilistic robotics methods with simulation environments. This repository contains organized implementations of coursework from ESE 6500 at the University of Pennsylvania.
+Comprehensive collection of fundamental robotics algorithms including SLAM, localization, control, and reinforcement learning. Features implementations of particle filters, Kalman filters, PPO, and probabilistic robotics methods with simulation environments.
 
 ## Features
 
